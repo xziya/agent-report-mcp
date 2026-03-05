@@ -30,6 +30,8 @@ build-backend = "setuptools.build_meta"
 
 [tool.uv.scripts]
 start = "python cli.py start"
+session = "python cli.py session"
+wrapper = "python wrapper.py"
 init = "python cli.py init"
 input = "python cli.py input"
 report = "python cli.py report"

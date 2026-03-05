@@ -43,6 +43,10 @@ coverage/
 # Human input file (auto-generated)
 .agent-human-inputs.json
 
+# Work reports (auto-generated)
+work-report-*.md
+work-report-*.json
+
 # Local development
 .local/
 
