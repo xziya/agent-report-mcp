@@ -1,0 +1,39 @@
+[project]
+name = "agent-report-mcp"
+version = "1.0.0"
+description = "MCP tool for automatically summarizing AI Agent work and generating reports"
+authors = [
+    { name = "", email = "" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.dependencies]
+fastmcp = "*"
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
+pydantic-settings = "*"
+python-dotenv = "*"
+watchdog = "*"
+GitPython = "*"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv.scripts]
+start = "python cli.py start"
+init = "python cli.py init"
+input = "python cli.py input"
+report = "python cli.py report"
+auto = "python cli.py auto"
+
+[tool.uv]
+package-mode = "isolated"
